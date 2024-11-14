@@ -1,15 +1,12 @@
 {
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "install-client": "cd frontend && npm install",
-    "install-server": "cd backend && npm install",
-    "install": "npm run install-client && npm run install-server",
-    "start": "npm run server & npm run client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && npm start",
     "client": "cd frontend && npm start"
-    },
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
