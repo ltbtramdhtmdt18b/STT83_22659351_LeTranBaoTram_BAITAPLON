@@ -1,18 +1,12 @@
 {
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "name": "final-shopping-app",
+  "private": true,
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && npm start",
-    "client": "cd frontend && npm start"
+    "client": "cd frontend && npm run dev"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "learn-context-by-building-a-shopping-website-master": "file:"
-  },
-  "devDependencies": {
     "concurrently": "^9.0.1"
   }
 }
