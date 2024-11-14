@@ -1,0 +1,19 @@
+{
+  "name": "learn-context-by-building-a-shopping-website-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "learn-context-by-building-a-shopping-website-master": "file:"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
